@@ -47,7 +47,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\WaveMovement.cs" />
     <None Include="Assets\2D\Cube World\Spritesheet\spritesheet_default.xml" />
-    <None Include="Assets\2D\Cube World\Spritesheet\spritesheet_double.xml" />
     <None Include="Assets\2D\Cartography\Spritesheet\spritesheet_retina.xml" />
     <None Include="Assets\2D\UI\Tilesheets\Large tiles\Tilesheet.txt" />
     <None Include="Assets\2D\Cartography\Spritesheet\spritesheet_default.xml" />
