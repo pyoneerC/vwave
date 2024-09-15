@@ -19,7 +19,7 @@ public class WaveMovement : MonoBehaviour
     {
         if (Camera.main) Camera.main.transform.position = new Vector3(0, transform.position.y, -10);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began || Input.GetKeyDown(KeyCode.Space))
         {
             _isMovingLeft = !_isMovingLeft;
         }
@@ -41,7 +41,6 @@ public class WaveMovement : MonoBehaviour
         }
 
         _speed += Time.deltaTime * 0.1f;
-        Debug.Log(_speed);
     }
 
     private bool IsOutOfCameraBounds()
