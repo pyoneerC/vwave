@@ -6,7 +6,7 @@ public class WaveMovement : MonoBehaviour
 {
     private SpriteRenderer _waveSprite;
     private bool _isMovingLeft;
-    private float _speed = 3;
+    private float _speed = 1;
     private PolygonCollider2D _collider;
 
     private void Start()
@@ -39,6 +39,9 @@ public class WaveMovement : MonoBehaviour
         {
             RestartGame();
         }
+
+        _speed += Time.deltaTime * 0.1f;
+        Debug.Log(_speed);
     }
 
     private bool IsOutOfCameraBounds()
