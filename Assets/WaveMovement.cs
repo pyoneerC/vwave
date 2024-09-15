@@ -34,10 +34,30 @@ public class WaveMovement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, -45);
             transform.position += -transform.right * (Time.deltaTime * _speed);
         }
+
+        if (IsOutOfCameraBounds())
+        {
+            RestartGame();
+        }
+    }
+
+    private bool IsOutOfCameraBounds()
+    {
+        var cam = Camera.main;
+
+        var viewportPosition = cam.WorldToViewportPoint(transform.position);
+
+        // Check if the object is out of the camera bounds
+        return viewportPosition.x < 0 || viewportPosition.x > 1 || viewportPosition.y < 0 || viewportPosition.y > 1;
+    }
+
+    private static void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        RestartGame();
     }
 }
