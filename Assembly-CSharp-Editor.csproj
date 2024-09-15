@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <None Include="Assets\TutorialInfo\Scripts\Editor\Spritesheet\spritesheet_retina.xml" />
+    <None Include="Assets\TutorialInfo\Scripts\Editor\Spritesheet\spritesheet_default.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\unidad\2022.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

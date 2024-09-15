@@ -47,6 +47,10 @@
   <ItemGroup>
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\WaveMovement.cs" />
+    <None Include="Assets\TutorialInfo\Scripts\Spritesheet\spritesheet_default.xml" />
+    <None Include="Assets\TutorialInfo\Scripts\Spritesheet\spritesheet_double.xml" />
+    <None Include="Assets\TutorialInfo\Icons\Tilesheets\Large tiles\Tilesheet.txt" />
+    <None Include="Assets\TutorialInfo\Icons\Tilesheets\Small tiles\Tilesheet.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\unidad\2022.3.27f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
